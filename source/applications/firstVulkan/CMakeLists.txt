@@ -1,0 +1,21 @@
+SET(ZS_APPLICATION_NAME firstVulkan)
+
+SET(ZS_APPLICATION_SRC
+	main.cpp
+)
+
+SET(ZS_APPLICATION_FOLDER "applications")
+
+#SET(ZS_APPLICATION_LINK_LIBRARIES_PRIVATE
+#	glfw
+#	glm::glm
+#)
+
+
+SET(ZS_APPLICATION_USE_MODULES_PRIVATE
+	glfw
+	glm::glm
+	Vulkan::Vulkan
+)
+
+ZS_SETUP_APPLICATION()
